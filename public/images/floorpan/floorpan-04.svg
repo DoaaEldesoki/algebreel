@@ -1,0 +1,23 @@
+<svg width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="grain-37">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.06" numOctaves="3" seed="37" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.35 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="sheen-37" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8F6A2E" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="#B8863B"/>
+  <g filter="url(#grain-37)"><rect x="0" y="0" width="640" height="106.66666666666667" fill="#B8863B" opacity="0.9"/>
+    <line x1="0" y1="0" x2="640" y2="0" stroke="#8F6A2E" stroke-opacity="0.25" stroke-width="2"/><rect x="0" y="106.66666666666667" width="640" height="106.66666666666667" fill="#D9A85C" opacity="0.9"/>
+    <line x1="0" y1="106.66666666666667" x2="640" y2="106.66666666666667" stroke="#8F6A2E" stroke-opacity="0.25" stroke-width="2"/><rect x="0" y="213.33333333333334" width="640" height="106.66666666666667" fill="#B8863B" opacity="0.9"/>
+    <line x1="0" y1="213.33333333333334" x2="640" y2="213.33333333333334" stroke="#8F6A2E" stroke-opacity="0.25" stroke-width="2"/><rect x="0" y="320" width="640" height="106.66666666666667" fill="#D9A85C" opacity="0.9"/>
+    <line x1="0" y1="320" x2="640" y2="320" stroke="#8F6A2E" stroke-opacity="0.25" stroke-width="2"/><rect x="0" y="426.6666666666667" width="640" height="106.66666666666667" fill="#B8863B" opacity="0.9"/>
+    <line x1="0" y1="426.6666666666667" x2="640" y2="426.6666666666667" stroke="#8F6A2E" stroke-opacity="0.25" stroke-width="2"/><rect x="0" y="533.3333333333334" width="640" height="106.66666666666667" fill="#D9A85C" opacity="0.9"/>
+    <line x1="0" y1="533.3333333333334" x2="640" y2="533.3333333333334" stroke="#8F6A2E" stroke-opacity="0.25" stroke-width="2"/></g>
+  <rect width="640" height="640" fill="url(#sheen-37)"/>
+  <text x="24" y="616" font-family="sans-serif" font-size="14" fill="#F3EDE4" fill-opacity="0.85">FLOORPAN - لون 4</text>
+</svg>

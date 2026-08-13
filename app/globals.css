@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "@fontsource/tajawal/700.css";
+@import "@fontsource/tajawal/800.css";
+@import "@fontsource/tajawal/500.css";
+@import "@fontsource/ibm-plex-sans-arabic/400.css";
+@import "@fontsource/ibm-plex-sans-arabic/500.css";
+@import "@fontsource/ibm-plex-sans-arabic/600.css";
+
+:root {
+  --sand: #f6f1ee;
+  --sand-deep: #e9dfd9;
+  --walnut: #4a484d;
+  --walnut-soft: #5c5a5e;
+  --oak: #f18a75;
+  --oak-light: #f5b5a5;
+  --brass: #ec6f5d;
+  --brass-bright: #f48b63;
+  --ink: #2f2d31;
+  --line: rgba(74, 72, 77, 0.14);
+}
+
+@theme inline {
+  --color-sand: var(--sand);
+  --color-sand-deep: var(--sand-deep);
+  --color-walnut: var(--walnut);
+  --color-walnut-soft: var(--walnut-soft);
+  --color-oak: var(--oak);
+  --color-oak-light: var(--oak-light);
+  --color-brass: var(--brass);
+  --color-brass-bright: var(--brass-bright);
+  --color-ink: var(--ink);
+  --font-display: "Tajawal", sans-serif;
+  --font-body: "IBM Plex Sans Arabic", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.plank-seam {
+  position: relative;
+}
+.plank-seam::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--line) 15%,
+    var(--line) 85%,
+    transparent
+  );
+}
+
+.grain-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
