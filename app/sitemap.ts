@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { brands } from "@/lib/data";
 
-const baseUrl = "https://YOUR-DOMAIN.com";
+const baseUrl = "https://algebreel.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [

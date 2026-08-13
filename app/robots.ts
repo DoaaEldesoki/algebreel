@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://YOUR-DOMAIN.com";
+const baseUrl = "https://algebreel.vercel.app";
 
 export default function robots(): MetadataRoute.Robots {
   return {
