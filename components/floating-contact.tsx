@@ -10,7 +10,7 @@ export function FloatingContact() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6, duration: 0.5 }}
-      className="fixed bottom-5 start-5 z-30 flex flex-col gap-3"
+      className="fixed bottom-5 left-5 z-30 flex flex-col gap-3"
     >
       <a
         href={siteInfo.whatsappHref}

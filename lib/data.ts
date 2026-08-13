@@ -59,7 +59,7 @@ export const brands: Brand[] = [
 ];
 
 export const homeSwatches = imgs("home-swatches", 8);
-export const homeProjects = imgs("home-projects", 6);
+export const homeProjects = Array.from({ length: 8 }, (_, i) => `/images/home-projects/${i + 1}.jpg`);
 export const heroImage = "/images/home-hero/hero-01.svg";
 export const guideImages = [
   "/images-optimized/agt/1.webp",

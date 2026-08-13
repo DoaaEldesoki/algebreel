@@ -52,7 +52,7 @@ export function LightboxGallery({
         className={cn(
           layout === "grid"
             ? "grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-4 lg:grid-cols-4"
-            : "columns-2 gap-4 sm:columns-3 [&>*]:mb-4"
+            : "columns-2 gap-4 sm:columns-3 md:columns-4 [&>*]:mb-4"
         )}
       >
         {items.map((item, i) => (
@@ -64,7 +64,7 @@ export function LightboxGallery({
             transition={{ type: "spring", stiffness: 300, damping: 24 }}
             className={cn(
               "group relative block w-full overflow-hidden rounded-lg border border-walnut/10 bg-walnut/5 text-start shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass",
-              layout === "grid" ? "aspect-square" : "break-inside-avoid"
+              layout === "grid" ? "aspect-square" : "mb-4 break-inside-avoid"
             )}
           >
             <Image
@@ -74,7 +74,7 @@ export function LightboxGallery({
               height={640}
               className={cn(
                 "w-full transition-transform duration-500 group-hover:scale-105",
-                layout === "grid" ? "h-full object-cover" : "h-auto"
+                layout === "grid" ? "h-full object-cover" : "h-[260px] w-full object-cover sm:h-[280px] md:h-[320px]"
               )}
               unoptimized
             />
